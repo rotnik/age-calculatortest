@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="icon" type="image/x-icon" href="https://pngimg.com/d/terminator_PNG2.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="example2.css">
+</head>
+<body>
+  <h1>Age Calculator</h1>
+  <div class="calculator-container">
+    <form id="ageCalculatorForm">
+  <div class="form-group">
+    <label for="birthdate">Enter Your Birthdate</label>
+    <div class="input-container">
+      <input type="text" id="birthdate" placeholder="MM/DD/YYYY" required>
+      <span class="input-scan"></span>
+    </div>
+    <div id="error" class="error"></div>
+  </div>
+  <button type="submit">Calculate Age</button>
+</form>
+    <div id="result" class="result">
+      <p id="ageOutput"></p>
+    </div>
+  </div>
+  <script src="example2.js"></script>
+</body>
+</html>
